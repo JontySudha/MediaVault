@@ -1,0 +1,13 @@
+services:
+  mediavault:
+    build: .
+    container_name: mediavault
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./database:/app/database
+      - ./gallery:/app/gallery
+
+    restart: unless-stopped

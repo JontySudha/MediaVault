@@ -1,0 +1,58 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# MediaVault database
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+
+# Downloaded media
+gallery/*
+!gallery/.gitkeep
+
+# Authentication / cookies
+auth/
+cookies/
+*.cookies
+*.cookie
+cookies.txt
+session.json
+session.db
+
+# Logs
+*.log
+logs/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Build output
+build/
+dist/
+*.spec
+
+# IDE
+.vscode/
+.idea/
+
+# Docker local data
+docker-data/
+
+# Temporary
+*.tmp
+*.temp
+"@ | Set-Content .gitignore
